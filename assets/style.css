@@ -160,7 +160,7 @@ z-index: 1;
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/anhimg/ny.jpg') top center / cover no-repeat;
+    background: url('assets/anhimg/ny.jpg') top center / cover no-repeat;
     /* Ảnh được chỉnh vào ở trên chính giữa, được cover là căn chỉnh hợp lý với khung, và không lặp lại */
 }
 .text-content{
