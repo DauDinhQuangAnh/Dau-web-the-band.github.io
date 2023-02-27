@@ -1,0 +1,43 @@
+@media screen and (max-width: 739px) {
+    .header{
+        overflow: hidden;
+        position:absolute;
+        position: fixed;
+    }
+    
+    .nav li{
+        display: block;
+    }
+    .header .search-btn{
+        display: none;
+    }
+    .header .menu-btn{
+        display: block;
+    }
+    .team-list{
+        width: 358.400px;
+        height: 834.612px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+    .text-center{
+        float: none;
+        width: 100%;
+    }
+
+    .col-three{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .col{
+        float: none;
+    }
+
+    .col-two{
+        width: 100%;
+    }
+    .contact-info{
+        margin-bottom: 16px;
+    }
+}
