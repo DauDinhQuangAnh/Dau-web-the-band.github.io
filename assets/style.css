@@ -67,6 +67,7 @@ top: 0;
 left: 0;
 right: 0;
 z-index: 1;
+
 }
 
 .nav {
@@ -110,11 +111,13 @@ z-index: 1;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1); /*Hiệu ứng đổ bóng box-shadow( )*/
     min-width: 160px; /* Độ dài nhỏ nhất tối thiểu là 160px*/
+    
 }
 
 
 .nav .subnav li {
     width: 100%;
+    
 }
 
 .nav .subnav a{
@@ -142,18 +145,33 @@ z-index: 1;
     background-color: #f44336;
     cursor: pointer;
 }
+.header .menu-btn:hover{
+    background-color: #fff;
+}
 
+.header .menu-btn .menu-icon:hover{
+    color: #000;
+}
+
+.header .menu-btn,
 .header .search-btn{
     float: right;
     padding: 0 21px;
+    
 }
 
+.header .menu-icon,
 .header .search-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46px;
     /* Căn giữa trên dưới */
 }
+
+.header .menu-btn{
+    display: none;
+}
+
 
 
 .slider{
