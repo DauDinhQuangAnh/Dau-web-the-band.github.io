@@ -147,9 +147,10 @@ z-index: 1;
 }
 .header .menu-btn:hover{
     background-color: #fff;
+    
 }
 
-.header .menu-btn .menu-icon:hover{
+.header .menu-btn:hover .menu-icon{
     color: #000;
 }
 
