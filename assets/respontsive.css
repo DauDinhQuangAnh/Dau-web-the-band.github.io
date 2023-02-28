@@ -14,6 +14,15 @@
     .header .menu-btn{
         display: block;
     }
+
+    .text-description{
+        display: none;
+    }
+
+    .text-heading{
+        display: none;
+    }
+
     .team-list{
         width: 358.400px;
         height: 834.612px;
@@ -39,5 +48,11 @@
     }
     .contact-info{
         margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 739px) and (max-width: 1023px) {
+    .text-description{
+        display: none;
     }
 }
