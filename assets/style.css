@@ -201,6 +201,7 @@ z-index: 1;
     margin-top: 25px;
     font-weight: bolder;/* Thuộc tính này gúp cho chữ có thể in đậm */
     font-family: "Lato", sans-serif; /* Thuộc tính này đợ giản là giúp bạn chỉnh font chữ */
+    text-shadow: 0 0 2px #000;
 }
 
 .content{
@@ -386,6 +387,15 @@ z-index: 1;
 .addin4 i{
     width: 30px;
     display: inline-block;
+    margin-bottom: 12px;
+}
+
+.addin4 a{
+    color: #f44336;
+}
+
+.addin4 a:hover{
+    color: #000;
 }
 
 .contact-form{
@@ -441,8 +451,9 @@ z-index: 1;
     color: rgba(0, 0, 0, 0.4)
 }
 
+
 .social-link{
-    margin: 15px 0px;
+    margin: 15px  0px;
     font-size: 15px;
 }
 .social-link p a{
