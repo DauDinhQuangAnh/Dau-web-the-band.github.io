@@ -1,4 +1,5 @@
-@media screen and (max-width: 739px) {
+/* mobile */
+@media screen and (max-width: 739px) { 
     .header{
         overflow: hidden;
         position:absolute;
@@ -49,10 +50,27 @@
     .contact-info{
         margin-bottom: 16px;
     }
+    .text-description{
+        display: none;
+    }
+    .text-heading{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 739px) and (max-width: 1023px) {
-    .text-description{
-        display: none;
+    
+}
+
+@media screen and (max-width: 1023px) {
+    #social-icon{
+        margin: 0px 8px;
+    }
+    #social-icon{
+        margin: 0px 8px;
+    }
+    .send-contact {
+        width: 100%;
     }
 }
