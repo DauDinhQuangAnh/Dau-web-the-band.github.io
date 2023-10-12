@@ -1,0 +1,461 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Select đến tất cả các thẻ HTML */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-three{
+    width: 33.3333%;
+}
+
+.col-two {
+    width: 50%;
+}
+
+.text-center{
+    text-align: center;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*
+1/ Làm từ trên xuống dưới 
+2/ Từ ngoài vào trong
+3/ Tổng quan đến chi tiết
+ */
+
+ /* 
+1/ Vị Trí
+2/ Kích Thước
+3/ Màu Sắc
+4/ Kiểu Dáng */
+
+.text-while{
+    color: #fff !important;
+}
+
+/* Thanh header có màu đen và có chiều cao là 46.5 */
+.header{
+height: 46px;
+background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+
+}
+
+.nav {
+    display: inline-block;
+}
+/* Các chữ có màu trắng và không có gạch chân được căn giữa chiều cao thanh header, padding trên dưới 12, trái phải 24 */
+.nav > li > a {
+    color: #fff;
+    text-transform: uppercase;    
+    display: inline-block;  
+    line-height: 46px;
+    
+}
+
+.nav li a{
+    
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+
+/* Thuộc tính này giúp khi lê chuột vào sẽ kích hoạt CSS ở dưới, :hover trước a để khi làm phần MORE chỉ xuống phần con của MORE sẽ không bị mất thuộc tính */
+.nav > li:hover > a{
+    background-color: #ccc;
+    color: black;
+}
+
+/*Inline-block làm cho cách chữ sẽ nằm ngang*/
+.nav li{
+    display: inline-block;  
+    /* Hiển thị và Đưa tất cả các phần từ lên một dòng */
+    position: relative; 
+    /* position có tác dụng căn chỉnh vị trí */
+}
+/* Để cho dễ nhìn thì ta dùng thẻ display:none; đê không hiển thị cho dễ nhìn */
+.nav .subnav{
+    display: none;      /* Ngưng hiển thị*/
+    position: absolute; /* Vị trí tuyệt đối*/
+    top: 100%;          /* Vị trí top sẽ cách ra theo khoảng cách thanh header*/
+    left: 0;            /* Vị trí left sẽ cách ra theo khoảng là 0*/
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /*Hiệu ứng đổ bóng box-shadow( )*/
+    min-width: 160px; /* Độ dài nhỏ nhất tối thiểu là 160px*/
+    
+}
+
+
+.nav .subnav li {
+    width: 100%;
+    
+}
+
+.nav .subnav a{
+    color: #000000;
+    padding: 0 16px;
+    line-height: 38px;
+    /* Lập chiều cao giữa các dòng */
+}
+
+/*Thẻ này khi con trỏ chuột đưa vô sẽ kích hoạt các thuộc tính trên*/
+.nav .subnav li:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.nav .nav-icon-down {
+    font-size: 12px;
+}
+
+.header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+.header .menu-btn:hover{
+    background-color: #fff;
+    
+}
+
+.header .menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+.header .menu-btn,
+.header .search-btn{
+    float: right;
+    padding: 0 21px;
+    
+}
+
+.header .menu-icon,
+.header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    /* Căn giữa trên dưới */
+}
+
+.header .menu-btn{
+    display: none;
+}
+
+
+
+.slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../assets/anhimg/ny.jpg') top center / cover no-repeat;
+    /* Ảnh được chỉnh vào ở trên chính giữa, được cover là căn chỉnh hợp lý với khung, và không lặp lại */
+}
+.text-content{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    width: 100%;
+    padding: 32px 16px;
+    text-align: center;
+}
+ 
+.text-heading{
+    font-size: 23px;
+    font-weight: 500px;
+}
+
+.text-description{
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: bolder;/* Thuộc tính này gúp cho chữ có thể in đậm */
+    font-family: "Lato", sans-serif; /* Thuộc tính này đợ giản là giúp bạn chỉnh font chữ */
+    text-shadow: 0 0 2px #000;
+}
+
+.content{
+    width: 768;
+}
+
+ .content-section{
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    /* box-sizing đó có nghĩa là sẽ được kế thừa thuộc tính của box cha */
+}
+
+.content .section-heading{
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center; /* Căn chỉnh chữ ra chính giữa, phụ thuộc vào box cha */
+    font-family:"Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px; /* Thuộc tính này giúp chữ của bạn có thể các ra 1 khoảng tùy chỉnh */
+}
+
+.content .section-sub-heading{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+    /* Cho chữ được in nghiêng */
+    opacity: 0.6;
+}
+
+.content .about{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 22.5px;
+    text-align: justify;/* Thuộc tính này giúp chữ sẽ được căn chỉnh trong 1 box một cách hợp lý */
+    font-family: "Lato", sans-serif;
+}
+
+.team-list{
+    padding: 32px 0;
+    width: 767px ;
+    height: 270px;
+
+}
+
+
+.content .team-list .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.content .team-list .member-img{
+    width: 60%;
+    text-align: justify;
+    border-radius: 5px ;
+    /* boder-radius sẽ gips cho viền ảnh sẽ được bo tròn lại */
+}
+
+.tour-section{
+    background-color: #000000;
+    /* color: #fff; có thể xài câu lệnh này cũng được nhưng chúng ta xài cách khác là ở
+    trên ta đã áp dụng 1 lệnh là ".text-while{
+    color: #fff;}" vậy nên ta chỉ cần past câu text-while vào sau mỗi chữ trong html tự khắc sẽ đổi màu*/
+}
+
+.tour-section .tickets-book{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-book li{
+    font-size: 15px;
+    padding: 11px 23px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style-type: none;
+        /* Sử dụng thẻ li thì sẽ bị các dấu chấm, dùng thẻ này để có thể xóa nó đi */
+    display: list-item;
+    /* Liệt kê thành dạng danh sách dọc giống thẻ li */
+}
+
+.tickets-book .sold-out{
+    margin-left: 16px;
+    padding: 3px 8px;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.tickets-book .quantity{
+    height: 24px; width: 24px;/* Khi ta cần tạo hình vuông chỉ cần cho chiều dài và rộng bằng nhau và xét border-radius50% */
+    border-radius: 50%;
+    background-color: #000000;
+    color: #fff;
+    float: right;
+        /* Đưa về bên phải box cha */
+    margin-top: -3.5px;
+        /* Khi có thuộc tính float thì chúng ta có thể sử dụng magin cho thẻ nếu bạn muốn */
+    padding: 0px 8px;
+    margin-right: 16px ;
+    text-align: center;
+        /* căn giữa trái phải */
+    line-height: 24px;
+        /* căn giữa trên dưới */
+}
+
+.place-list{
+    padding: 32px 0px;
+    
+    
+}
+
+.place-item{
+    width: 33.33333333%; 
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{ /* Thuộc tính trong đây giúp bạn khi trỏ vào ảnh sẽ trở nên tối lại*/
+    opacity: 0.60;
+}
+
+
+.place-body{
+    background-color: #fff;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    padding: 0px 16px;
+}
+.place-content{
+    padding-top: 15px ;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.place-date{
+    margin-top:15px; 
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: #757575;
+}
+
+.place-about{
+    margin-top: 15px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.place-buy{
+    padding: 10px 18px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    margin-bottom: 16px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.place-buy:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.contact-section{
+
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.addin4{
+    padding: 32px 0px;
+}
+
+.addin4 i{
+    width: 30px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.addin4 a{
+    color: #f44336;
+}
+
+.addin4 a:hover{
+    color: #000;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-contro{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline-color: blue;
+}
+
+.content-top{
+    margin-bottom: 9px;
+}
+
+.send-contact{
+    margin: 16px 0px;
+    padding: 10px 18px;
+    float: right;
+    color: #fff;
+    background-color: #000;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.send-contact:hover{
+    background-color: #ccc; 
+    color: #000;
+    
+}
+
+.map-section .map-img{
+    width: 100%;
+}
+
+
+.footer{
+    padding: 64px 16px;
+    text-align: center;
+    color: #757575;
+}
+
+.social-list{
+    font-size: 20px;
+}
+
+.social-icon:hover{
+    color: rgba(0, 0, 0, 0.4)
+}
+
+
+.social-link{
+    margin: 15px  0px;
+    font-size: 15px;
+}
+.social-link p a{
+    color: #757575;
+}

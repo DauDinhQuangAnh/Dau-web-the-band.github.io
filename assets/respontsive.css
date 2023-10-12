@@ -1,0 +1,76 @@
+/* mobile */
+@media screen and (max-width: 739px) { 
+    .header{
+        overflow: hidden;
+        position:absolute;
+        position: fixed;
+    }
+    
+    .nav li{
+        display: block;
+    }
+    .header .search-btn{
+        display: none;
+    }
+    .header .menu-btn{
+        display: block;
+    }
+
+    .text-description{
+        display: none;
+    }
+
+    .text-heading{
+        display: none;
+    }
+
+    .team-list{
+        width: 358.400px;
+        height: 834.612px;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+    .text-center{
+        float: none;
+        width: 100%;
+    }
+
+    .col-three{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .col{
+        float: none;
+    }
+
+    .col-two{
+        width: 100%;
+    }
+    .contact-info{
+        margin-bottom: 16px;
+    }
+    .text-description{
+        display: none;
+    }
+    .text-heading{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 739px) and (max-width: 1023px) {
+    
+}
+
+@media screen and (max-width: 1023px) {
+    #social-icon{
+        margin: 0px 8px;
+    }
+    #social-icon{
+        margin: 0px 8px;
+    }
+    .send-contact {
+        width: 100%;
+    }
+}
